@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This site showcases my work, experience, and gives a glimpse of who I am as a professional and creative individual.  
 
-## 🚀 Live Demo
+## 🚀 Live
 Check out the live version of my portfolio here:
 
 ## 💻 About This Project

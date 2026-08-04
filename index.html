@@ -1,1108 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="I'm a Developer, UI/UX Designer, System Consultant, and Computer Systems Analyst based in Pretoria, Gauteng. I work across web development and print media, specialising in turning complex problems into simple, beautiful, and intuitive design solutions">
-  <title>Lesedi Phalatse</title>
-
-  <!--
-    - favicon
-  -->
+  <meta name="description" content="Lesedi Phalatse is a software developer, systems analyst and product-minded engineer building refined enterprise applications, ERP platforms and digital experiences.">
+  <meta name="theme-color" content="#11100e">
+  <title>Lesedi Phalatse — Software Developer & Systems Thinker</title>
   <link rel="shortcut icon" href="./assets/images/Logo.svg" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Lesedi Phalatse home">LP<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#experience">Journey</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="mailto:lesediphaltse13@gmail.com">Discuss an opportunity <span>↗</span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
 
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/me.jpeg" alt="Lesedi Phalatse" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Lesedi Phalatse">Lesedi Phalatse</h1>
-          <p class="title">Mobile Application & Web Developer</p>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Pretoria, South Africa</p>
+        <h1>I build thoughtful<br><em>software systems</em><br>for real-world work.</h1>
+        <p class="hero-intro">I’m Lesedi Phalatse — a software developer, systems analyst and UI/UX designer combining business understanding, technical architecture and refined product design.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">Explore selected work <span>↓</span></a>
+          <a href="mailto:lesediphaltse13@gmail.com" class="text-link">Recruit, collaborate or partner <span>↗</span></a>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:lesediphaltse13@gmail.com" class="contact-link">lesediphaltse13@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+27606117450" class="contact-link">+27 60 611 7450</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2005-05-13">May 13, 2005</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Central Pretoria, Pretoria, South Africa</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/lesedi-phalatse" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile of Lesedi Phalatse">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-           I'm a Software Developer, System Architect, UI/UX Designer, System Consultant, and Computer Systems Analyst based in Pretoria, Gauteng. I'm passionate about building innovative digital solutions that combine clean design, functionality, and real-world problem solving. With a strong foundation in web development, mobile applications, software engineering, and systems analysis, I enjoy transforming complex ideas into simple, intuitive, and impactful user experiences.
-          </p>
-
-          <p>
-            My work focuses on creating modern, responsive, and user-friendly applications that are both visually appealing and technically efficient. I specialize in web and mobile development using technologies such as JavaScript, React, HTML, CSS, Java, and C#, while also applying principles of UI/UX design, information systems, and software architecture. Every project I build is designed with attention to performance, usability, and scalability — ensuring that the final product not only looks great but also solves meaningful problems.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon photo.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Systems Analysis & Architecture</h4>
-
-                <p class="service-item-text">
-                  Aligning technology solutions with business needs.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Zwivhuya Tshikosi" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Zwivhuya Tshikosi</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Working with Lesedi on our corporate identity was an excellent experience. His attention to detail, strategic thinking, and understanding of our brand resulted in a polished and cohesive identity that exceeded our expectations.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Khumo Rampedi" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Khumo Rampedi</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Lesedi was hired to create our corporate identity, and we were very pleased with the work delivered. He demonstrated strong experience and a genuine understanding of our needs as a client. The final result was professional, thoughtful, and well aligned with our brand.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Success Riba" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Success Riba</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Lesedi was hired to create a corporate identity, and we were very pleased with the work delivered. He demonstrated extensive experience and a strong understanding of our needs as a client. The final result was professional, thoughtful, and well aligned with our brand.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Thanbang Masango" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Thanbang Masango</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                   Lesedi was hired to create our corporate identity, and we were very pleased with the work delivered. He demonstrated strong experience and a clear understanding of our needs as a client. The final outcome was professional and well aligned with our brand.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Thanbang Masango</h4>
-
-              <time datetime="2025-06-14">14 June, 2025</time>
-
-              <div data-modal-text>
-                <p>
-                  Lesedi was hired to create our corporate identity, and we were very pleased with the work delivered. He demonstrated strong experience and a clear understanding of our needs as a client. The final outcome was professional and well aligned with our brand.
-              </div>
-
-            </div>
-
-          </section>
-
+        <div class="hero-proof" aria-label="Portfolio highlights">
+          <div><strong>6+</strong><span>Industry platforms</span></div>
+          <div><strong>40+</strong><span>Business modules</span></div>
+          <div><strong>Full-stack</strong><span>Product thinking</span></div>
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/Logo-1-color.svg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.svg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.svg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.svg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.svg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.svg" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">IIE Rosebank College</h4>
-              <h5 class="h5 timeline-item-title">• Diploma in Software Development</h5>
-              <span>2025 — 2027</span>
-
-              <p class="timeline-text">
-                Currently pursuing a Diploma in Software Development, focusing on advanced programming concepts, software engineering principles, and project management skills.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">IIE Rosebank College</h4>
-              <h5 class="h5 timeline-item-title">• Certificate in Mobile Application & Web Development</h5>
-
-              <span>2024 — 2024</span>
-
-              <p class="timeline-text">
-                Relevant Coursework: Web Development Fundamentals, Mobile Application Development Fundamental. Achieved Outstanding Academic Performance.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Suncrest High School</h4>
-
-              <span>2019 — 2023</span>
-              <p class="timeline-text">
-                Completed Matric
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Freelance Web Developer</h4>
-
-              <span>2024 — Present</span>
-
-              <p class="timeline-text">
-                Designed and developed responsive websites using modern web technologies, ensuring optimal user experience across devices.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Digital Solutions Assistant</h4>
-
-              <span>2025 — Present</span>
-
-              <p class="timeline-text">
-                Assisted in the development and maintenance of digital platforms, contributing to improved functionality and user engagement.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2024 — Present</span>
-
-              <p class="timeline-text">
-                Created visually appealing web designs that align with client branding and enhance user experience.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Developer</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">System Analysis & Architecture</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Software Engineering</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://confident-commit-809400.framer.app/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.png" alt="machenic" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Machenic</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-               <a href="https://particular-world-231748.framer.app/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="plumbng" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Plumbing</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://divine-path-055289.framer.app/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.png" alt="Weld" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Weld</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="logistics" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Logistics</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="cleaner" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Cleaner</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-             <li class="project-item  active" data-filter-item data-category="web development">
-               <a href="https://attractive-yak-886030.framer.app/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="school" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">School</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-               <a href="https://rich-topic-572497.framer.app/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="laundry" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Laundry</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.png" alt="The Discipline No One Sees" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Personal Growth</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-02-23">Fab 23, 2023</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The Discipline No One Sees</h3>
-
-                  <p class="blog-text">
-                    Most people celebrate results, but very few respect the discipline that produces them. The truth is, growth happens in silence—early mornings, late nights, and the uncomfortable moments where quitting feels easier than continuing. Discipline is not motivation. It's showing up even when inspiration is absent. The life you want is built in the hours no one applauds.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Why I Chose Excellence Over Attentionr" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Mindset / Professional Life</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Why I Chose Excellence Over Attention</h3>
-
-                  <p class="blog-text">
-                    In an age where visibility is mistaken for value, I made a conscious decision to pursue excellence instead of attention. Noise fades. Skill compounds. I no longer measure progress by likes or applause, but by depth, precision, and integrity in my work. When excellence becomes your standard, recognition becomes inevitable—but irrelevant.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Building in the Foundation Phase" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Career Development</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Building in the Foundation Phase</h3>
-
-                  <p class="blog-text">
-                    Every meaningful career has a phase where effort outweighs reward. This is the foundation phase—where learning is heavy, results are light, and patience is tested. This phase teaches humility, resilience, and mastery. Those who survive it don't rush. They prepare. And when opportunity comes, they're ready to carry its weight.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="Work Ethic Is a Form of Worship" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Faith & Purpose</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Work Ethic Is a Form of Worship</h3>
-
-                  <p class="blog-text">
-                   True work ethic is not about pressure—it's about stewardship. How you treat your skills, time, and responsibilities reflects what you believe about purpose. When work is done with excellence, honesty, and consistency, it becomes an offering. Not to impress people—but to honor the gift entrusted to you.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="Why Consistency Beats Talent" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Success Principles</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2026</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Why Consistency Beats Talent</h3>
-
-                  <p class="blog-text">
-                    Talent opens doors. Consistency keeps them open. Many people start strong; few finish well. The difference isn't intelligence or luck—it's the ability to return daily, refine, and improve without needing validation. Consistency is quiet, powerful, and unstoppable.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="The Future Belongs to Those Who Prepare in Silence" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Vision & Legacy</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The Future Belongs to Those Who Prepare in Silence</h3>
-
-                  <p class="blog-text">
-                   The loudest room is not where the strongest builders are. Real builders work quietly, stacking skills, sharpening vision, and preparing for moments others aren't ready for. The future doesn't reward hype—it rewards preparation. And preparation prefers silence.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.097720104734!2d28.18818831500247!3d-25.746111983615444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9568d237b1a4a9%3A0x6a7f3dbeffdd4c6e!2sPretoria%20Central%2C%20Pretoria%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1706349600000!5m2!1sen!2sza"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-
-             <form action="mailto:lesediphaltse13@gmail.com" method="post" enctype="text/plain" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-    
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-
-      </article>
-
-    </div>
-
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-frame">
+          <img src="./assets/images/me.jpeg" alt="Portrait of Lesedi Phalatse">
+          <div class="portrait-label"><span>Open to</span><strong>Graduate roles · Partnerships · Product teams</strong></div>
+        </div>
+        <div class="monogram">L</div>
+      </div>
+      <div class="scroll-cue">Selected work below <span>↓</span></div>
+    </section>
+
+    <section class="intro-strip" aria-label="Professional capabilities"><div class="marquee">
+      <span>Software Engineering</span><i>✦</i><span>Systems Analysis</span><i>✦</i><span>Enterprise Applications</span><i>✦</i><span>UI/UX Design</span><i>✦</i><span>Business Automation</span><i>✦</i><span>Full-Stack Development</span><i>✦</i>
+      <span>Software Engineering</span><i>✦</i><span>Systems Analysis</span><i>✦</i><span>Enterprise Applications</span><i>✦</i><span>UI/UX Design</span><i>✦</i><span>Business Automation</span><i>✦</i><span>Full-Stack Development</span><i>✦</i>
+    </div></section>
+
+    <section class="about section" id="about">
+      <div class="section-number">01</div>
+      <div class="section-heading reveal"><p class="eyebrow">Professional profile</p><h2>More than code.<br><em>I connect people, processes and technology.</em></h2></div>
+      <div class="about-grid">
+        <div class="about-statement reveal"><p>I approach software as a business tool: understand the work, simplify the process, design the experience, then engineer a dependable solution.</p></div>
+        <div class="about-detail reveal">
+          <p>My portfolio spans ERP platforms, operational dashboards, responsive web experiences and role-based management systems across construction, mining, logistics, property and education.</p>
+          <p>I’m currently completing a Diploma in IT in Software Development while independently designing ambitious products that demonstrate requirements analysis, database thinking, interface design, application architecture and implementation.</p>
+          <p>I bring the curiosity of an early-career developer with the ownership mindset of a product builder — comfortable learning quickly, translating complex needs and carrying ideas from concept to usable software.</p>
+        </div>
+      </div>
+      <div class="value-grid reveal">
+        <article><span>01</span><h3>Business-aware engineering</h3><p>I look beyond features to understand users, workflows, risks and the outcome the software must improve.</p></article>
+        <article><span>02</span><h3>End-to-end ownership</h3><p>From requirements and wireframes to APIs, databases, responsive interfaces, testing and documentation.</p></article>
+        <article><span>03</span><h3>Design with intention</h3><p>Clear information hierarchy, refined visual systems and interfaces designed for repeated daily use.</p></article>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="section-number">02</div>
+      <div class="work-heading reveal"><div><p class="eyebrow">Selected work</p><h2>Products built around<br><em>real operational complexity.</em></h2></div><p>Each project reflects a different industry, but the same approach: understand the process, structure the information and make demanding work easier to manage.</p></div>
+      <div class="project-grid">
+        <article class="project project-large reveal" data-project="buildcore"><button class="project-open" aria-label="View BuildCore project details"><div class="project-media"><img src="./assets/images/buildcore-login.png" alt="BuildCore construction ERP interface"><span class="view-project">Explore case study ↗</span></div><div class="project-meta"><div><p>01 / Construction ERP</p><h3>BuildCore</h3></div><span>Operations · Finance · Workforce · Reporting</span></div></button></article>
+        <article class="project reveal" data-project="orecore"><button class="project-open" aria-label="View OreCore project details"><div class="project-media"><img src="./assets/images/orecore-dashboard.png" alt="OreCore mining ERP interface"><span class="view-project">Explore case study ↗</span></div><div class="project-meta"><div><p>02 / Mining Technology</p><h3>OreCore</h3></div><span>Production · Equipment · Safety · Analytics</span></div></button></article>
+        <article class="project reveal" data-project="logisticore"><button class="project-open" aria-label="View LogistiCore project details"><div class="project-media"><img src="./assets/images/logisticore-dashboard.png" alt="LogistiCore logistics dashboard"><span class="view-project">Explore case study ↗</span></div><div class="project-meta"><div><p>03 / Logistics Platform</p><h3>LogistiCore</h3></div><span>Fleet · Dispatch · Tracking · Warehousing</span></div></button></article>
+        <article class="project reveal" data-project="propertyflow"><button class="project-open" aria-label="View PropertyFlow project details"><div class="project-media"><img src="./assets/images/project-4.png" alt="PropertyFlow property management system"><span class="view-project">Explore case study ↗</span></div><div class="project-meta"><div><p>04 / Property Technology</p><h3>PropertyFlow</h3></div><span>Tenants · Finance · Maintenance · Documents</span></div></button></article>
+        <article class="project project-wide reveal" data-project="educore"><button class="project-open" aria-label="View school management project details"><div class="project-media"><img src="./assets/images/project-5.png" alt="School management system dashboard"><span class="view-project">Explore case study ↗</span></div><div class="project-meta"><div><p>05 / Education</p><h3>Student Records System</h3></div><span>Attendance · Results · Records · Access control</span></div></button></article>
+        <article class="project reveal" data-project="web"><button class="project-open" aria-label="View web design project details"><div class="project-media"><img src="./assets/images/sedip-website.png" alt="Sedi.P industrial software services website"><span class="view-project">Explore collection ↗</span></div><div class="project-meta"><div><p>06 / Web & Product Design</p><h3>Sedi.P Digital Experience</h3></div><span>Industrial websites · Product presentation · Brand presence</span></div></button></article>
+      </div>
+    </section>
+
+    <section class="capabilities section" id="capabilities">
+      <div class="section-number">03</div>
+      <div class="section-heading reveal"><p class="eyebrow">Capabilities</p><h2>A growing technical toolkit,<br><em>applied through complete products.</em></h2></div>
+      <div class="capability-grid reveal">
+        <article><p class="cap-number">01</p><h3>Backend & application engineering</h3><div class="tags"><span>C#</span><span>ASP.NET Core</span><span>.NET</span><span>REST APIs</span><span>Entity Framework Core</span><span>MVC</span><span>JWT Authentication</span><span>Role-Based Access</span><span>Dependency Injection</span></div></article>
+        <article><p class="cap-number">02</p><h3>Frontend development</h3><div class="tags"><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Vite</span><span>Responsive Design</span><span>Interactive Dashboards</span><span>Framer Motion</span></div></article>
+        <article><p class="cap-number">03</p><h3>Data & systems</h3><div class="tags"><span>SQL Server</span><span>Relational Modelling</span><span>Database Design</span><span>CRUD Workflows</span><span>Reporting</span><span>Systems Analysis</span><span>Requirements Gathering</span><span>Process Mapping</span><span>UML Fundamentals</span></div></article>
+        <article><p class="cap-number">04</p><h3>Product & design</h3><div class="tags"><span>UI/UX Design</span><span>Figma</span><span>Prototyping</span><span>Design Systems</span><span>Information Architecture</span><span>Accessibility Awareness</span><span>User-Centred Design</span><span>Software Documentation</span></div></article>
+        <article><p class="cap-number">05</p><h3>Tools & delivery</h3><div class="tags"><span>Git</span><span>GitHub</span><span>Visual Studio</span><span>VS Code</span><span>SSMS</span><span>Postman</span><span>Netlify</span><span>Cloud-Ready Thinking</span><span>Agile Fundamentals</span></div></article>
+        <article class="learning-card"><p class="cap-number">Now developing</p><h3>Where I’m expanding next</h3><p>Cloud deployment, DevOps workflows, containerisation, automated testing, AI integration and deeper software architecture patterns.</p></article>
+      </div>
+    </section>
+
+    <section class="quote-section reveal"><p>“The best software is not the one with the most features. It is the one that makes important work <em>simpler, faster and more dependable.</em>”</p><span>— My engineering philosophy</span></section>
+
+    <section class="process section">
+      <div class="section-number">04</div>
+      <div class="section-heading reveal"><p class="eyebrow">How I work</p><h2>Structured thinking from<br><em>problem to product.</em></h2></div>
+      <div class="process-list reveal">
+        <div><span>01</span><h3>Understand</h3><p>Clarify users, business needs, constraints and the decisions the system must support.</p></div>
+        <div><span>02</span><h3>Structure</h3><p>Map workflows, data, permissions, modules and the architecture behind the experience.</p></div>
+        <div><span>03</span><h3>Design</h3><p>Create a consistent interface system that makes complex information clear and usable.</p></div>
+        <div><span>04</span><h3>Build</h3><p>Implement features across the frontend, backend and database with maintainability in mind.</p></div>
+        <div><span>05</span><h3>Refine</h3><p>Test interactions, resolve gaps, improve performance and document the final solution.</p></div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="section-number">05</div>
+      <div class="section-heading reveal"><p class="eyebrow">Experience & development</p><h2>Building evidence of ability<br><em>before waiting for permission.</em></h2></div>
+      <div class="timeline reveal">
+        <div class="timeline-item"><span>2026 — Present</span><div><h3>Founder & Software Developer</h3><p>Sedi.P Industrial Software Services</p></div><p>Developing business systems and web experiences while shaping product strategy, interface design, technical requirements and client-facing proposals.</p></div>
+        <div class="timeline-item"><span>2025 — Present</span><div><h3>Independent Product Developer</h3><p>Enterprise application portfolio</p></div><p>Designed cross-industry ERP concepts featuring dashboards, analytics, document management, reporting, workflows, permissions and operational modules.</p></div>
+        <div class="timeline-item"><span>2024 — 2027</span><div><h3>Diploma in IT</h3><p>Software Development</p></div><p>Developing practical knowledge across programming, databases, operating systems, information security, systems analysis and application development.</p></div>
+        <div class="timeline-item"><span>Completed</span><div><h3>Higher Certificate</h3><p>Mobile Application & Web Development</p></div><p>Built a foundation in web development, mobile application concepts, interface design and modern digital product creation.</p></div>
+      </div>
+    </section>
+
+    <section class="fit-section section">
+      <div class="section-number">06</div>
+      <div class="fit-copy reveal"><p class="eyebrow">Where I add value</p><h2>I’m ready to contribute where<br><em>technology meets real operations.</em></h2></div>
+      <div class="fit-grid reveal">
+        <article><span>For recruiters</span><h3>An adaptable early-career engineer</h3><p>Strong product ownership, broad technical exposure, business awareness and a portfolio that demonstrates initiative beyond coursework.</p></article>
+        <article><span>For product teams</span><h3>A bridge between design and development</h3><p>Someone who can understand requirements, contribute to interfaces, reason about systems and collaborate across disciplines.</p></article>
+        <article><span>For partners & clients</span><h3>A builder focused on usable outcomes</h3><p>Clear communication, structured discovery and tailored digital solutions designed around the way an organisation actually works.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-copy reveal"><p class="eyebrow">Start a conversation</p><h2>Looking for someone who<br><em>builds with ownership?</em></h2><p class="contact-lead">I’m open to graduate software roles, junior developer opportunities, product collaborations, internships and selected digital projects.</p><a href="mailto:lesediphaltse13@gmail.com" class="contact-email">lesediphaltse13@gmail.com <span>↗</span></a></div>
+      <div class="contact-details reveal"><div><span>Based in</span><p>Pretoria, Gauteng<br>South Africa</p></div><div><span>Connect</span><p><a href="https://www.linkedin.com/in/lesedi-phalatse" target="_blank" rel="noopener">LinkedIn ↗</a><br><a href="tel:+27606117450">+27 60 611 7450</a></p></div><div><span>Availability</span><p>Employment<br>Internships<br>Partnerships</p></div></div>
+    </section>
   </main>
 
+  <div class="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel"><button class="modal-close" data-close-modal aria-label="Close project details">×</button><p class="eyebrow modal-kicker" id="modal-kicker"></p><h2 id="modal-title"></h2><p class="modal-summary" id="modal-summary"></p><img id="modal-image" src="" alt=""><div class="modal-gallery" id="modal-gallery" aria-label="Project screenshots"></div><div class="modal-columns"><div><span>Challenge</span><p id="modal-challenge"></p></div><div><span>My approach</span><p id="modal-approach"></p></div></div><div class="modal-footer"><div><span>Key capabilities</span><div class="tags" id="modal-tags"></div></div><div><span>Role</span><p id="modal-role"></p></div></div></div>
+  </div>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <footer><a href="#home" class="brand">LP<span>.</span></a><p>© 2026 Lesedi Phalatse. Designed and built with intention.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
